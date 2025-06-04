@@ -1,12 +1,31 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React from 'react';
+import Navigation from '../components/Navigation';
+import Hero from '../components/Hero';
+import Introduction from '../components/Introduction';
+import Education from '../components/Education';
+import Skills from '../components/Skills';
+import Footer from '../components/Footer';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
+      <Navigation />
+      <main className="relative">
+        <section id="home" className="min-h-screen">
+          <Hero />
+        </section>
+        <section id="introduction" className="min-h-screen">
+          <Introduction />
+        </section>
+        <section id="education" className="min-h-screen">
+          <Education />
+        </section>
+        <section id="skills" className="min-h-screen">
+          <Skills />
+        </section>
+      </main>
+      <Footer />
     </div>
   );
 };
